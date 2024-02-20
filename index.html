@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Management System</title>
+    <link rel="stylesheet" href="bookstore.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> Book Stores</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Add Book</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+      <h2><u>Bookstore Management System</u></h2>
+      <form id="bookForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <button>Add Book</button>
+      </form>
+      <input type="text" id="search" placeholder="Search by title" onkeyup="searchBooks()">
+      <table id="bookTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="bookList">
+        </tbody>
+      </table>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy;Book Stores</p>
+        </div>
+    </footer>
+
+    <script src="bookstore.js"></script>
+</body>
+</html>
